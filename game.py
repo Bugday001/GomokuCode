@@ -15,8 +15,8 @@ class Gomoku:
         else:
             return 0
 
+    # 判断游戏结局。0进行中，1玩家胜，2电脑胜利，3平局
     def game_result(self):
-        # 判断游戏结局。0进行中，1玩家胜，2电脑胜利，3平局
         # 判断是否横向五子
         for y in range(15):
             for x in range(11):
@@ -97,19 +97,4 @@ class Gomoku:
                     self.chess.append((x, y, 2))
                     return x, y
 
-    def show(self, res):
-        return res
 
-    def play(self):
-        while True:
-            self.move()
-            res = self.game_result()
-            if res != 0:
-                self.game_result()
-                return
-            self.ai_move()
-            res = self.game_result()
-            if res != 0:
-                self.show(res)
-                return
-            self.show(0)
