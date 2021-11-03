@@ -1,5 +1,10 @@
 # 五子棋
 实际有用的文件只有`game.py`和`main.py`前者是逻辑，后者是Pygame的显示。
+直接运行`main.py`即可开始游戏。
+requestments
+```
+
+```
 
 2021/11/3更新
 
